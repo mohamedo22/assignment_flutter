@@ -27,8 +27,7 @@ class Homepage extends StatelessWidget {
         if (providerObject.products != null) {
           return Expanded(
               child: GridView.builder(
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
             itemBuilder: (context, index) => GestureDetector(
               onTap:(){ Navigator.push(context , MaterialPageRoute(builder: (context) => Detiles(id: index),));},
                 child: customWidget(

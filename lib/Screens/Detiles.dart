@@ -55,7 +55,7 @@ class Detiles extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(13),
-                    child: Text(providerObject.products!.products[id]["description"]),
+                    child: Text(providerObject.products!.products[id]["description"]),//sees
                   )
                 ],
               ),
